@@ -21,6 +21,9 @@
     }
     .card img {
       border-radius: 5px 5px 0 0;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
     .card-body {
       padding: 20px;
@@ -52,14 +55,15 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-						<li class="nav-item">
-							<form class="d-flex">
-								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-								<button class="btn btn-outline-success" type="submit">Search</button>
-							</form>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="signupDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Sign Up
+							</a>
+							<div class="dropdown-menu" aria-labelledby="signupDropdown">
+								<a class="dropdown-item" href="#">Sign Up with Email</a>
+								<a class="dropdown-item" href="#">Sign Up with Google</a>
+								<a class="dropdown-item" href="#">Sign Up with GitHub</a>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -96,31 +100,6 @@
 							<p class="card-text">Build meaningful connections and maybe even find your perfect match.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-			<hr>
-			<h2 class="text-center my-5">Join Tech Mapenzi today</h2>
-			<div class="row">
-				<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-					<form>
-						<div class="mb-3">
-							<label for="name" class="form-label">Name</label>
-							<input type="text" class="form-control" id="name" required>
-						</div>
-						<div class="mb-3">
-							<label for="email" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="email" required>
-						</div>
-						<div class="mb-3">
-							<label for="password" class="form-label">Password</label>
-							<input type="password" class="form-control" id="password" required>
-						</div>
-						<div class="mb-3">
-							<label for="confirmPassword" class="form-label">Confirm Password</label>
-							<input type="password" class="form-control" id="confirmPassword" required>
-						</div>
-						<button type="submit" class="btn btn-primary">Join now</button>
-					</form>
 				</div>
 			</div>
 		</div>
